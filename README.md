@@ -50,8 +50,8 @@ Before running the application, make sure you have:
 
 1. Clone the repository
 
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd taskmanager
+git clone https://github.com/J22z/hmcts-task-manager.git
+cd hmcts-task-manager
 
 Replace the placeholder with your GitHub repository URL after uploading the project.
 
