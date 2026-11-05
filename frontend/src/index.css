@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap');
+
+/* Colours and fonts used throughout the app */
+
+:root {
+  --bg: #f6f3ec;
+  --surface: #fffefa;
+  --text: #20251f;
+  --muted: #5c645c;
+  --line: #d8d8ce;
+  --line-strong: #8a998d;
+  --accent: #365c46;
+  --accent-dark: #274734;
+  --danger: #9c3b2e;
+  --danger-tint: #f6e6e2;
+  --hover-tint: #ebe8de;
+
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-head: 'DM Serif Display', Georgia, serif;
+
+  /* Default text styling */
+
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Keep element sizing consistent */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Form controls use the same font as the rest of the page */
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Make keyboard focus visible */
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Use the display font for headings */
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-head);
+  font-weight: 400;
+}
+
+/* Respect users who prefer reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

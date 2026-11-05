@@ -1,0 +1,53 @@
+HELP.md
+
+# Maven build output
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Spring Tool Suite
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# VS Code
+.vscode/
+
+# React dependencies and production build
+frontend/node_modules/
+frontend/dist/
+
+# Local H2 database
+data/
+*.mv.db
+*.trace.db
+
+# Environment files
+.env
+.env.*
+frontend/.env
+frontend/.env.*
+
+# macOS
+.DS_Store
